@@ -7,7 +7,10 @@ class NavBar extends Component {
             <header>
                 <ul id="headerButtons">
                     <li className="navButton">
-                        <Link to="">Home</Link>
+                        <Link to="" className="btn btn-sm btn-success">Home</Link>
+                    </li>
+                    <li className="navButton">
+                        <Link to="/about" className="btn btn-sm btn-success">About</Link>
                     </li>
                 </ul>
             </header>

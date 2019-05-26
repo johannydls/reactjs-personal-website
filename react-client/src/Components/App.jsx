@@ -6,6 +6,7 @@ import { browserHistory } from 'react-router';
 import HomePage from './HomePage';
 import NavBar from './HeaderComponent/NavBar';
 import Footer from './FooterComponent/Footer';
+import AboutPage from './AboutPage';
 
 class App extends Component {
     render() {
@@ -13,7 +14,10 @@ class App extends Component {
             <Router>
                 <div>
                     <NavBar />
-                    <Route name="home" exact path="/" component={HomePage} />
+                    <div className="content">
+                        <Route name="home" exact path="/" component={HomePage} />
+                        <Route name="about" exact path="/about" component={AboutPage} />
+                    </div>
                     <Footer />
                 </div>
             </Router>
